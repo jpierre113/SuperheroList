@@ -12,18 +12,18 @@ function App() {
     }, []);
 
   return (
-          <div className="App">
-          {
-            heroes.map((hero, index) => {
-              return (
-                <HeroCard
-                  {...hero}
-                  key={index}
-                />
-              );
-            })
-          }
-      </div>
+    <div className="App">
+      {
+        heroes.map((hero, index) => {
+          return (
+            <HeroCard
+              {...hero}
+              key={index}
+            />
+          );
+        })
+      }
+    </div>
   );
 }
 
