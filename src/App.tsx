@@ -1,25 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useEffect, useState} from 'react';
+import HeroCard from './HeroCard';
 import './App.css';
 
 function App() {
+  const [heroes, setHeroes] = useState([]); // use an empty array as initial value
+
+  useEffect(() => {
+    fetch('https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/all.json')
+    .then(response => response.json())
+    .then(data => setHeroes(data));
+    }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <div className="App">
+          {
+            heroes.map((hero, index) => {
+              return (
+                <HeroCard
+                  {...hero}
+                  key={index}
+                />
+              );
+            })
+          }
+      </div>
   );
 }
 
