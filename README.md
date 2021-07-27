@@ -14,3 +14,6 @@ Single page frontend application that lists superheroes from REST API(https://ak
 - Cd into the SuperheroList folder
 - Run npm install
 - Then npm run start and it will open a localhost:3000 page in default web browser
+
+### Possible Improvements
+- Implementing infinite scrolling, Currently the application displays all heroes in the API, my goal would be to display a few at a time and when user scrolls to the bottom of the page it would load the next set of heroes
