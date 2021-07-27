@@ -1,6 +1,6 @@
 # Superhero List
 
-Single page frontend application that lists superheroes from REST API(https://akabab.github.io/superhero-api/api/). Clicking on the hero's image will display their power stats.
+Single page frontend application that lists superheroes from a [REST API](https://akabab.github.io/superhero-api/api/). Clicking on the hero's image will display their power stats in a modal.
 
 ## Technologies Used
 
