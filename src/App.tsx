@@ -13,6 +13,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1 className="siteTitle">Superhero List</h1>
       {
         heroes.map((hero, index) => {
           return (
