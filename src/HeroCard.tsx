@@ -16,12 +16,12 @@ function HeroCard(props:any) {
           <Modal show={modal} size='sm' centered>
             <Modal.Header>{props.name}</Modal.Header>
             <Modal.Body>
-              <span className='statIcon'><FontAwesomeIcon icon={faBrain} /></span> Intelligence: {props.powerstats.intelligence}  <br/>
-              <span className='statIcon'><FontAwesomeIcon icon={faDumbbell} /></span> Strength: {props.powerstats.strength}<br/>
-              <span className='statIcon'><FontAwesomeIcon icon={faTachometerAlt} /></span> Speed: {props.powerstats.speed}  <br/>
-              <span className='statIcon'><FontAwesomeIcon icon={faShieldAlt} /></span> Durability: {props.powerstats.durability}  <br/>
-              <span className='statIcon'><FontAwesomeIcon icon={faBolt} /></span> Power: {props.powerstats.power} <br/>
-              <span className='statIcon'><FontAwesomeIcon icon={faFistRaised} /></span>  Combat: {props.powerstats.combat} <br/>
+              <FontAwesomeIcon icon={faBrain} /> Intelligence: {props.powerstats.intelligence}  <br/>
+              <FontAwesomeIcon icon={faDumbbell} /> Strength: {props.powerstats.strength}<br/>
+              <FontAwesomeIcon icon={faTachometerAlt} /> Speed: {props.powerstats.speed}  <br/>
+              <FontAwesomeIcon icon={faShieldAlt} /> Durability: {props.powerstats.durability}  <br/>
+              <FontAwesomeIcon icon={faBolt} /> Power: {props.powerstats.power} <br/>
+              <FontAwesomeIcon icon={faFistRaised} />  Combat: {props.powerstats.combat} <br/>
             </Modal.Body>
             <Modal.Footer>
               <Button onClick={() => handleModal()}> Close </Button>
