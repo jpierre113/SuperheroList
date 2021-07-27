@@ -10,7 +10,7 @@ function HeroCard(props:any) {
 
     return(
       <div className='heroCard'>
-        <img src={props.images.sm} alt={props.name} onClick={() => handleModal()} />
+        <img src={props.images.sm} alt={props.name} style={{cursor: 'pointer'}} onClick={() => handleModal()} />
         <h3>{props.name}</h3>
         <div>
           <Modal show={modal} size='sm' centered>
