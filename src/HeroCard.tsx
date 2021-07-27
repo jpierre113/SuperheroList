@@ -21,7 +21,7 @@ function HeroCard(props:any) {
               <FontAwesomeIcon icon={faTachometerAlt} /> Speed: {props.powerstats.speed}  <br/>
               <FontAwesomeIcon icon={faShieldAlt} /> Durability: {props.powerstats.durability}  <br/>
               <FontAwesomeIcon icon={faBolt} /> Power: {props.powerstats.power} <br/>
-              <FontAwesomeIcon icon={faFistRaised} />  Combat: {props.powerstats.combat} <br/>
+              <FontAwesomeIcon icon={faFistRaised} /> Combat: {props.powerstats.combat} <br/>
             </Modal.Body>
             <Modal.Footer>
               <Button onClick={() => handleModal()}> Close </Button>
